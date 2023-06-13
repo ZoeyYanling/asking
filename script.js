@@ -8,11 +8,14 @@ submitBtn.on('click', function(){
     var emailInput = $('#inputEmail').val();
     var interest = $('#interest').text();
     var interestInput = $('#inputInterest').val();
-    localStorage.setItem(name,nameInput);
-    localStorage.setItem(email,emailInput);
-    localStorage.setItem(interest,interestInput);
-    
+    localStorage.setItem('name',nameInput);
+    localStorage.setItem('email',emailInput);
+    localStorage.setItem('interest',interestInput);    
 });
+
+console.log(localStorage.getItem('name'));
+console.log(localStorage.getItem('email'));
+console.log(localStorage.getItem('interest'));
 
 
 
